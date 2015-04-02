@@ -1,0 +1,209 @@
+/* 
+    Document   : sc_our_services
+    Created on : Jun 23, 2014, 7:07:26 PM
+    Author     : Bilal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+.center{ text-align: center; }
+
+.ssi-facebook{background: #3B5998}
+.ssi-twitter{background: #6BCFFF}
+.ssi-google-plus{background: #DE4939}
+.ssi-pinterest{background: #CE1829}
+.ssi-search{background: orange}
+.ssi-linkedin{background: #007bb6}
+.ssi-envelope{background: #28944A }
+.ssi-phone{background: #F5832A}
+.ssi-rss{background: #FF6600}
+.ssi-youtube{background:#CD332D}
+.ssi-gplus{background:#D34836}
+.ssi-instagram{background:#3f729b}
+.ssi-skype{background:#00AFF0}
+.ssi-tumblr{background:#639EC8}
+.ssi-foursquare{background:#0894C9}
+.ssi-github{background:#141414}
+.ssi-store{background:#BCE63E}
+
+@media( max-width: 480px ) {
+    #ssi-absolute{
+        display: none;
+    }
+}
+
+#ssi-absolute{
+    position: fixed !important;
+    top: 200px;
+    z-index: 9999 !important;
+    left: 0;
+    width: 0 !important;
+}
+#ssi-absolute a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s all linear;
+    border: none;
+    outline: none;
+}
+#ssi-absolute a:hover{
+    width: 50px;
+}
+
+/*-- Sharing Icons --*/
+ul.smartkit-share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.smartkit-share-buttons li{
+  display: inline;
+}
+ul.smartkit-share-buttons li a{
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+    background: rgb(68, 68, 68);
+    color: #F9F9F9;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 25px;
+    transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    /*margin-right: 3px;*/   
+}
+ul.smartkit-share-buttons li a:hover{
+    background: rgb(230,230,230);
+    color: rgb(68, 68, 68);
+    box-shadow: 0 0 2px #333;
+    -moz-box-shadow: 0 0 2px #333;
+    -webkit-box-shadow: 0 0 2px #333;
+}
+
+
+/*-- Lightbox --*/
+#smartkit-lightbox-overlay{
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+}
+#smartkit-lightbox-overlay #smartkit-lightbox{
+    position: relative;
+    margin: 75px auto;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 0 5px #000;
+    -moz-box-shadow: 0 0 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+    min-height: 300px;
+    display: none;
+    
+}
+@media( min-width: 600px ){
+   #smartkit-lightbox-overlay #smartkit-lightbox{
+       width: 600px;
+       margin: 150px auto;
+       
+   }
+}
+
+#smartkit-lightbox-overlay #smartkit-lightbox img{
+    width: 100%;
+}
+
+#smartkit-lightbox-overlay #smartkit-lightbox.lightbox-open{
+    display: block;
+    position: relative;
+    
+}
+#smartkit-lightbox-overlay #smartkit-lightbox.lightbox-closed{
+    display: none;
+    position: relative;
+    
+}
+
+#smartkit-lightbox-overlay #smartkit-lightbox .fa-times{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 100%;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    
+}
+#smartkit-lightbox-overlay #smartkit-lightbox .smartkit-lightbox-inner{
+    
+    /*padding: 20px;*/
+    
+}
+
+/**
+* Grid CSS
+*/
+@media (min-width: 768px) {
+  .sc-col-sm-1, .sc-col-sm-2, .sc-col-sm-3, .sc-col-sm-4, .sc-col-sm-5, .sc-col-sm-6, .sc-col-sm-7, .sc-col-sm-8, .sc-col-sm-9, .sc-col-sm-10, .sc-col-sm-11, .sc-col-sm-12 {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;    
+  }
+  .sc-col-sm-12 {
+    width: 100%;
+  }
+  .sc-col-sm-11 {
+    width: 91.66666667%;
+  }
+  .sc-col-sm-10 {
+    width: 83.33333333%;
+  }
+  .sc-col-sm-9 {
+    width: 75%;
+  }
+  .sc-col-sm-8 {
+    width: 66.66666667%;
+  }
+  .sc-col-sm-7 {
+    width: 58.33333333%;
+  }
+  .sc-col-sm-6 {
+    width: 50%;
+  }
+  .sc-col-sm-5 {
+    width: 41.66666667%;
+  }
+  .sc-col-sm-4 {
+    width: 33.33333333%;
+  }
+  .sc-col-sm-3 {
+    width: 25%;
+  }
+  .sc-col-sm-2 {
+    width: 16.66666667%;
+  }
+  .sc-col-sm-1 {
+    width: 8.33333333%;
+  }
+}
